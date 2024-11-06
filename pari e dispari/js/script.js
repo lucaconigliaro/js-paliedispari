@@ -6,7 +6,7 @@ console.log(`Hai scelto ${evenOdd}`);
 console.log(`Il numero che hai scelto è ${userNum}`)
 
 //Funzione numero random generato
-let cpuNum = newCpuNum (1, 5);
+let cpuNum = getRandomInt (1, 5);
 console.log(`Il computer ha scelto il numero ${cpuNum}`)
 
 //Dichiariamo chi ha vinto 
@@ -14,10 +14,8 @@ let evenAndOdd = sumItem (userNum + cpuNum);
 console.log(`Il risultato della somma è ${evenAndOdd}`)
 
 if(evenAndOdd === evenOdd) {
-    let risultato = "Hai vinto!";
-    console.log(risultato);
+    console.log("Hai Vinto");
 } else {
-    let risultato = "Hai perso!"
-    console.log(risultato)
+    console.log("Hai Perso")
 }
 

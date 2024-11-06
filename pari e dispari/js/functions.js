@@ -1,12 +1,11 @@
 /**
  * Generiamo un numero random da 1 a 5 per il computer
- * @param {number} number
- * @param {number} number
+ * @param {number} min
+ * @param {number} max
  * @returns {number}
  */
-function newCpuNum(min, max) {
-    const randomNum = Math.floor(Math.random() *(max - min) + min);
-    return randomNum
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() *(max - min) + min);
 }
 
 /**
@@ -15,7 +14,7 @@ function newCpuNum(min, max) {
  * @param {number} number2
  * @returns {number} sum
  */
-function sumItem(number1, numb) {
+function sumItem(number1, number2) {
     let sum = userNum + cpuNum;
     if (sum % 2 === 0) {
         sum = "Pari";
